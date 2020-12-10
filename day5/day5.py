@@ -26,12 +26,12 @@ for seat in seats:
 
 def findMissing(arr, n):
 
-    l, h = 0, n - 1
+    li, h = 0, n - 1
     mid = 0
 
-    while (h > l):
+    while (h > li):
 
-        mid = l + (h - l) // 2
+        mid = li + (h - li) // 2
 
         # Check if middle element is consistent
         if (arr[mid] - mid == arr[0]):
@@ -44,7 +44,7 @@ def findMissing(arr, n):
             else:
 
                 # Move right
-                l = mid + 1
+                li = mid + 1
 
         else:
 

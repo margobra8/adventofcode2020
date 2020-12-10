@@ -23,7 +23,8 @@ def findTrees(chart, down, across, max_down) -> int:
 
     return trees
 
-#print(findTrees(lines, 1, 3, len(lines)))
+# print(findTrees(lines, 1, 3, len(lines)))
+
 
 inputs = [
     (1, 1),
@@ -40,7 +41,9 @@ for (d, a) in inputs:
     print("down:", d, "across:", a, "-->", res)
     outputs.append(res)
 
+
 def prod(iterable):
     return reduce(operator.mul, iterable, 1)
+
 
 print("Final result", prod(outputs))

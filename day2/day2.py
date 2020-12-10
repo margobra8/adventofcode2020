@@ -1,16 +1,15 @@
-
 lines = []
 
 with open("input.txt", "r") as f:
     lines = f.readlines()
 
 
-halves = [l.split(":") for l in lines]
+halves = [li.split(":") for li in lines]
 for half in halves:
     half[0] = half[0].split()
     half[1] = half[1].split()
 
-valid1 = 0
+valid_1 = 0
 
 for item in halves:
     constraints = item[0][0].split("-")
@@ -21,12 +20,12 @@ for item in halves:
     pw = item[1][0]
 
     occs = pw.count(char)
-    if (min_n <= occs) and (occs <= max_n):
-        valid1 += 1
+    if min_n <= occs <= max_n:
+        valid_1 += 1
 
-print(valid1)
+print(valid_1)
 
-valid2 = 0
+valid_2 = 0
 
 for item in halves:
     constraints = item[0][0].split("-")
@@ -38,6 +37,6 @@ for item in halves:
 
     occs = pw.count(char)
     if bool(pw[min_n-1] == char) ^ bool(pw[max_n-1] == char):
-        valid2 += 1
+        valid_2 += 1
 
-print(valid2)
+print(valid_2)

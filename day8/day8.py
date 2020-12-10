@@ -18,6 +18,7 @@ print(acc)
 program = [(command, int(number))
            for command, number in map(str.split, open('input.txt'))]
 
+
 def resolve_program() -> Union[None, int]:
     acc, index = 0, 0
     states = set()
