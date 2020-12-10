@@ -1,5 +1,5 @@
 # Advent of Code 2020
-![Pyrun](https://github.com/margobra8/adventofcode2020/workflows/Pyrun/badge.svg?branch=main)
+![Pyrun](https://github.com/margobra8/adventofcode2020/workflows/build/badge.svg?branch=main)
 
 Advent of Code personal submissions for 2020 year
 

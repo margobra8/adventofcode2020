@@ -1,4 +1,4 @@
-name: Pyrun
+name: build
 
 on: [push]
 
